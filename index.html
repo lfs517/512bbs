@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEFI BIOS BBS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bios-container">
+        <div class="bios-header">
+            <span>Aptio Setup Utility - Copyright (C) 2026 American Megatrends, Inc.</span>
+            <span id="bios-clock">00:00:00</span>
+        </div>
+
+        <div class="marquee-container">
+            <div class="marquee-text" id="runtext-content">Loading system text...</div>
+        </div>
+
+        <div class="top-menu" id="top-menu">
+            </div>
+        
+        <div class="bios-body">
+            <div class="main-content" id="main-content">
+                </div>
+            <div class="side-panel" id="side-panel">
+                <div class="panel-title">Item Specific Help</div>
+                <div class="panel-body" id="account-info">
+                    </div>
+            </div>
+        </div>
+        
+        <div class="bios-footer">
+            ←→: Select Screen | ↑↓: Select Item | Enter: Select | F10: Save & Exit | ESC: Exit
+        </div>
+    </div>
+
+    <div class="bios-dialog" id="login-dialog" style="display: none;">
+        <div class="dialog-title">CREATE / LOGIN ACCOUNT</div>
+        <div class="dialog-body">
+            <label>Username: <input type="text" id="input-username" placeholder="User"></label><br><br>
+            <label>Account Code: @<input type="text" id="input-code" placeholder="user123"></label><br><br>
+            <p style="color: #aaaaaa; font-size: 12px;">* Account ID will be auto-generated.</p>
+            <button onclick="submitLogin()">[ SAVE & ENTER ]</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+
